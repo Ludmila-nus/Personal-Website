@@ -1,38 +1,86 @@
-:root{
-    font-size: 16px;
-}
-header{
-    background-color: black;
+font-family: 'Josefin Slab', serif;
+font-family: 'Just Another Hand', cursive;
+font-family: 'Sarala', sans-serif;
 
-}
-footer{
-    background-color: lavender;
-}
-h1{
-    color: mediumvioletred;
-    font-size: 3rem;
-}
-
-p{
-    color:darkgray;
-
-    font-size: 1.5rem;
-
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
 }
 
-a{
-    color:white;
-    font-size: 1.3rem;
+:root {
+    --text-color: #090002;
+    --bg-color: #4C4B4B;
+    --second-bg-color: #D9D8D8;
+    --main-color: #FF7086;
+  
+    --color-1: #6D6C6C;
+    --color-2: #8F8E8E;
+    --color-3: #B4B2B2;
+  }
+  
+
+body {
+    font-family: 'Sarala', sans-serif;
+    font-size: 62.5%;
+    background-color: var(--second-bg-color);
 }
 
-.container{
-    width: 100;
-    max-width: 1366;
-    min-width: 256;
-    margin: auto;
+nav {
+    background: var(--bg-color);
+
 }
 
-picture{
-    width: 100;
-    border-radius: 15px;
+ul.nav-list {
+    list-style-type: none; /* Quita los puntos de lista */
+    display: flex; /* Utiliza flexbox para organizar los elementos todos en linea*/
+    justify-content: space-between; /* Distribuye espacio entre los elementos */
+}
+
+li {
+    display: inline; /* Muestra los elementos en línea horizontalmente */
+    margin-right: 10px; /* Añade margen derecho para separar los elementos */
+}
+
+
+
+ul.nav-list a {
+    color: var(--second-bg-color);
+    font-size: 2em;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-decoration-line: none;
+
+}
+
+ul.nav-list a:hover, div.icons a:hover{
+    background-color: var(--main-color);
+}
+
+
+.tittle h1{
+    font-family: 'Josefin Slab', serif;
+    font-size: 3em;
+    white-space: pre-line;
+    color:var(--main-color)
+}
+
+.tittle p{
+    font-family: 'Just Another Hand', cursive;
+    font-size: 2.5em;
+    color:var(--bg-color)
+}
+
+div.icons a{
+    font-size: 2em;
+    color: var(--main-color);
+}
+
+.icons h2{
+    font-size: 1.5em;
+    color:var(--color-1)
 }
