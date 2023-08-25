@@ -45,8 +45,17 @@
   <meta name="theme-color" content="#ffffff">
 
   <!-- archivos css -->
-  <!--  <link rel="stylesheet" href="./css/style-ludmila.css" /> -->
+  <link rel="stylesheet" href="./css/style-ludmila.css" />
 
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Sarala:wght@400;700&family=Signika+Negative&display=swap"
+    rel="stylesheet">
+
+  <!--boostrap icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
 </head>
 
@@ -54,76 +63,74 @@
 
   <header>
     <!--header group-->
-    <div>
-      <nav>
-        <ul class="nav-list">
-          <div class="logo">
-            <!--Logo and home-->
-            <li><a href="#" class="logo">Ludmila</a></li>
-          </div>
-          <div class="main">
-            <!--Main navigation -->
-            <li><a href="about.html">About</a></li>
-            <li><a href="proyects.html">Proyects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </div>
-          <div class="social-icons">
-            <!--social media icons -->
-            <li><a href="https://www.linkedin.com/in/ludmila-nussio/" title="Connect with me on Linkedin"><i
-                  class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://github.com/Ludmila-nus" title="See my code in github"><i class="fab fa-github"></i></a>
-            </li>
-          </div>
+    <div></div>
+    <nav>
+      <ul class="nav-list">
+        <div class="logo">
+          <!--Logo and home-->
+          <li><a href="index.html">ludmila nussio</a></li>
+        </div>
+        <div class="main">
+          <!--Main navigation -->
+          <li><a href="about.html">About</a></li>
+          <li><a href="proyects.html">proyects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </div>
 
-        </ul>
-      </nav>
+      </ul>
+    </nav>
     </div>
   </header>
 
   <main>
-    <!--form group-->
-    <h1>Feel free to contact me!</h1>
-    <form action="me" name="contact" method="get">
-      <div>
-      <fieldset>
-        <legend>Fill out the form, and I'll happily get in touch with you</legend>
+    <div class="contact">
+      <!--form group-->
+      <h1>Feel free to contact me!</h1>
 
-        <p>
-          <label for="name">Name</label>
-          <input type="text" name="name" id="name" maxlength="50" placeholder="Write your name" autofocus>
-        </p>
-        <p>
-          <label for="lastame">Lastname</label>
-          <input type="text" name="lastame" id="lastame" maxlength="50" placeholder="write your lastame">
-        </p>
-        <p>
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" maxlength="50" placeholder="xxx@email.com">
-        </p>
-        <p>
-          <label for="phone>Phone</label>
-            <input type=" text" name="phone id=" phone maxlength="11" placeholder="000 0000000">
+      <form action="me" name="contact" method="get">
+        <div class="fieldset">
+          <div>
+            <fieldset>
+              <legend>Fill out the form, and I'll happily get in touch with you</legend>
 
-        <p>
-          <button>Enviar</button>
-        </p>
+              <p>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" maxlength="50" placeholder="Write your name" autofocus>
+              </p>
+              <p>
+                <label for="lastame">Lastname</label>
+                <input type="text" name="lastame" id="lastame" maxlength="50" placeholder="write your lastame">
+              </p>
+              <p>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" maxlength="50" placeholder="xxx@email.com">
+              </p>
+              <p>
+                <label for="phone>Phone">Phone</label>
+                <input type=" text" name="phone id=" phone maxlength="11" placeholder="000 0000000">
 
-      </fieldset>
-      </div>
+                  <p>
+                    <button>Enviar</button>
+                  </p>
 
-      <br>
+            </fieldset>
+          </div>
 
-      <div>
-        <fieldset>
-          <legend>If you'd like to contact me, here are my details</legend>
+          <br>
 
-          <address>email: ludmilanussio@hotmail.com</address>
-          <address>phone: +54 351 2406912</address>
+          <div>
+            <fieldset>
+              <legend>If you'd like to contact me, here are my details</legend>
 
-        </fieldset>
-      </div>
+              <address>email: ludmilanussio@hotmail.com</address>
+              <address>phone: +54 351 2406912</address>
 
-    </form>
+            </fieldset>
+          </div>
+        </div>
+
+      </form>
+    </div>
 
   </main>
 
