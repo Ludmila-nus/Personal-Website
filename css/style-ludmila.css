@@ -10,8 +10,8 @@ html {
 
 :root {
     --font-family-primary: 'Sarala', sans-serif;
-    --font-family-secondary: 'Just Another Hand', cursive;
-    --font-family-heading: 'Signika Negative', sans-serif;
+    --font-family-secondary: 'Signika Negative', sans-serif;
+    --font-family-heading: 'Just Another Hand', cursive;
         
     --text-color: #090002;
     --bg-color: #4C4B4B;
@@ -72,7 +72,8 @@ ul.nav-list a:hover, div.icons a:hover {
 
 h1 {
     font-family: var(--font-family-heading);
-    font-size: 3em;
+    font-size: 5em;
+    letter-spacing: +2.5px;
     white-space: pre-line;
     color: var(--main-color);
 }
@@ -81,7 +82,7 @@ p {
     font-family: var(--font-family-secondary);
     font-size: 2.5em;
     color: var(--bg-color);
-    letter-spacing: +2.5px;
+    
 }
 
 footer p{
@@ -99,6 +100,7 @@ div.icons h2 {
     color: var(--color-1)
 }
 
+
 /* html about me */
 
 div.about-me h1 {
@@ -110,7 +112,6 @@ div.about-me h1 {
 
 /* html contact */
 
-
 div.fieldset fieldset {
     font-family: var(--font-family-heading);
     font-size: 1em;
@@ -119,15 +120,18 @@ div.fieldset fieldset {
 
 div.fieldset fieldset legend {
     color: var(--bg-color);
-    font-size: 2em;
+    letter-spacing: +2.5px;
+    font-size: 3em;
 }
 
 div.fieldset fieldset button {
     background-color: var(--main-color);
 }
+
 address{
-    font-size: 20px;
+    font-size: 2.8em;
     color: var(--main-color);
+    letter-spacing: +3px;
     font-weight: 700;
 }
 
