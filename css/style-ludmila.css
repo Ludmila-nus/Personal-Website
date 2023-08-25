@@ -114,7 +114,7 @@ div.about-me h1 {
 
 div.fieldset fieldset {
     font-family: var(--font-family-heading);
-    font-size: 1em;
+    font-size: 0.8em;
     background-color: var(--color-3);
 }
 
