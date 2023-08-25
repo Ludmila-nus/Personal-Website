@@ -1,7 +1,3 @@
-font-family: 'Signika Negative', sans-serif;
-font-family: 'Just Another Hand', cursive;
-font-family: 'Sarala', sans-serif;
-
 html {
     margin: 0;
     padding: 0;
@@ -13,45 +9,53 @@ html {
 }
 
 :root {
+    --font-family-primary: 'Sarala', sans-serif;
+    --font-family-secondary: 'Just Another Hand', cursive;
+    --font-family-heading: 'Signika Negative', sans-serif;
+        
     --text-color: #090002;
     --bg-color: #4C4B4B;
     --second-bg-color: #D9D8D8;
     --main-color: #2ca3be;
-  
+
     --color-1: #6D6C6C;
     --color-2: #8F8E8E;
     --color-3: #B4B2B2;
-  }
-  
+}
+
 
 body, footer {
-    font-family: 'Sarala', sans-serif;
+    font-family: var(--font-family-primary);
     font-size: 62.5%;
     background-color: var(--second-bg-color);
 }
 
 nav {
     background: var(--bg-color);
-
 }
 
-footer{
+footer {
     font-size: 1em;
     background-color: var(--color-3);
+    
 }
 
+
 ul.nav-list {
-    list-style-type: none; /* Quita los puntos de lista */
-    display: flex; /* Utiliza flexbox para organizar los elementos todos en linea*/
-    justify-content: space-between; /* Distribuye espacio entre los elementos */
+    list-style-type: none;
+    /* Quita los puntos de lista */
+    display: flex;
+    /* Utiliza flexbox para organizar los elementos todos en linea*/
+    justify-content: space-between;
+    /* Distribuye espacio entre los elementos */
 }
 
 li {
-    display: inline; /* Muestra los elementos en línea horizontalmente */
-    margin-right: 10px; /* Añade margen derecho para separar los elementos */
+    display: inline;
+    /* Muestra los elementos en línea horizontalmente */
+    margin-right: 10px;
+    /* Añade margen derecho para separar los elementos */
 }
-
-
 
 ul.nav-list a {
     color: var(--second-bg-color);
@@ -59,82 +63,71 @@ ul.nav-list a {
     font-weight: 500;
     text-transform: capitalize;
     text-decoration-line: none;
-
 }
 
-ul.nav-list a:hover, div.icons a:hover{
+ul.nav-list a:hover, div.icons a:hover {
     background-color: var(--main-color);
 }
 
-.logo a{
-    font-weight: 700;
-}
 
-
-.tittle h1{
-    font-family: 'Signika Negative', sans-serif;
+h1 {
+    font-family: var(--font-family-heading);
     font-size: 3em;
     white-space: pre-line;
-    color:var(--main-color)
+    color: var(--main-color);
 }
 
-.tittle p{
-    font-family: 'Just Another Hand', cursive;
+p {
+    font-family: var(--font-family-secondary);
     font-size: 2.5em;
-    color:var(--bg-color);
-    letter-spacing: +2px;
+    color: var(--bg-color);
+    letter-spacing: +2.5px;
 }
 
-div.icons a{
+footer p{
+    font-family: var(--font-family-primary);
+    font-size: 1.1em;
+}
+
+div.icons a {
     font-size: 2em;
     color: var(--main-color);
 }
 
-.icons h2{
+div.icons h2 {
     font-size: 1.5em;
-    color:var(--color-1)
+    color: var(--color-1)
 }
 
 /* html about me */
 
-.about-me h1{
-    font-family: 'Just Another Hand', cursive;
-    font-size: 6em;
-    letter-spacing: +5px;
+div.about-me h1 {
     text-decoration-line: underline;
-    text-decoration-thickness: 10px;
-    color:var(--main-color);
-}
-
-.about-me p{
-    font-size: 2em;
-    color:var(--text-color)
+    text-decoration-thickness: 5px;
 }
 
 
 
 /* html contact */
 
-.contact h1{
-    font-family: 'Just Another Hand', cursive;
-    font-size: 6em;
-    letter-spacing: +5px;
-   
-    color:var(--bg-color);
-}
 
-.fieldset fieldset{
-    font-family: 'Signika Negative', sans-serif;
-    font-size: 1.8em;
+div.fieldset fieldset {
+    font-family: var(--font-family-heading);
+    font-size: 1em;
     background-color: var(--color-3);
-
 }
 
-.fieldset fieldset legend{
+div.fieldset fieldset legend {
     color: var(--bg-color);
-    font-size: 1.2em;
+    font-size: 2em;
 }
 
-.fieldset fieldset button{
+div.fieldset fieldset button {
     background-color: var(--main-color);
 }
+address{
+    font-size: 20px;
+    color: var(--main-color);
+    font-weight: 700;
+}
+
