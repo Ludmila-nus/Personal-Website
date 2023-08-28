@@ -14,9 +14,9 @@ html {
     --font-family-heading: 'Just Another Hand', cursive;
         
     --text-color: #090002;
-    --bg-color: #4C4B4B;
+    --bg-color: #312f2f;
     --second-bg-color: #D9D8D8;
-    --main-color: #2ca3be;
+    --main-color: #c52598;
 
     --color-1: #6D6C6C;
     --color-2: #8F8E8E;
@@ -113,14 +113,14 @@ div.about-me h1 {
 /* html contact */
 
 div.fieldset fieldset {
-    font-family: var(--font-family-heading);
-    font-size: 0.8em;
+    font-family: var(--font-family-primary);
+    font-size: 0.5em;
     background-color: var(--color-3);
 }
 
 div.fieldset fieldset legend {
     color: var(--bg-color);
-    letter-spacing: +2.5px;
+    letter-spacing: +1px;
     font-size: 3em;
 }
 
