@@ -1,26 +1,35 @@
 html {
-    margin: 0px;
-    border: 0px;
+    margin: 0;
+    padding: 10;
+    box-sizing: border-box;
     text-decoration: none;
     border: none;
     outline: none;
     scroll-behavior: smooth;
 }
 
+/* Aplica el fondo solo en la página de inicio (index.html) */
+body.inicio {
+    background-image: url('../img/wallpapers/bodegon-libros-versus-tecnologia.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
 :root {
     --font-family-primary: 'Lato', sans-serif;
     --font-family-secondary: 'Signika Negative', sans-serif;
     --font-family-secondary-2: 'Sarala', sans-serif;
         
-    --text-color: #000000;
-    --bg-color: #3b3b3b;
-    --second-bg-color: #777777;
-    --main-color: #b9b9b9;
+    --text-color: #5e5c5d;
+    --bg-color: #ccc9c9;
+    --second-bg-color: #fcfcfc;
+    --main-color: #95056c;
 
-    --color-1: #ffffff;
+    --color-1: #13e2e2;
     --color-2: rgb(126, 243, 247);
     --color-3: #7af2f2;
-    --color-4: #cbc8ca;
+    --color-4: #e299cd;
 }
 
 .neon-text-1 {
@@ -33,29 +42,14 @@ html {
     text-shadow: 0 0 10px rgba(149, 5, 108, 0.8), 0 0 20px rgba(149, 5, 108, 0.8), 0 0 30px rgba(149, 5, 108, 0.8);
 }
 
+
 body{
     font-family: var(--font-family-primary);
-    font-size: 62.5%; /* 1 rem equivale al 10% del tamaño de fuente predeterminado del navegador. 
-    Esto facilita las conversiones de tamaños de fuente en rem. 
-    tamaño de fuente de 16px = 1.6rem en lugar de 16px.*/
+    font-size: 62.5%;
 }
 
-/* Aplica el fondo solo en la página de inicio (index.html) */
-body.inicio {
-    background-image: linear-gradient(to right top, #000000, #3b3b3b, #777777, #b9b9b9, #ffffff);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0px;
-}
-
-
-div.nav-var > nav {
-    background-image: url('../img/banner/banner1.png');
-    height: 100px;
-    background-size: cover;
-    padding: 2.5%;
-    box-sizing: border-box;
-    margin: 0px;
+nav {
+    background: var(--color-4);
 }
 
 ul.nav-list {
@@ -63,10 +57,9 @@ ul.nav-list {
     display: flex; /* Utiliza flexbox para organizar los elementos todos en linea*/
     justify-content: space-between; /* Distribuye espacio entre los elementos */
 }
-
 ul.nav-list li {
     display: inline; /* Muestra los elementos en línea horizontalmente */
-    margin-right: 20px; /* Añade margen derecho para separar los elementos */
+    margin-right: 50px; /* Añade margen derecho para separar los elementos */
 }
 
 ul.nav-list a {
@@ -76,40 +69,26 @@ ul.nav-list a {
     text-transform: capitalize;
     text-decoration-line: none;
 }
-ul.nav-list a:hover{
-    background-color: var(--bg-color);
-    color: var(--color-1);
-}
 
-ul.icons a:hover {
+ul.nav-list a:hover, ul.icons a:hover {
     background-color: var(--color-2);
-    color: var(--text-color);
 }
 
 ul.icons li {
     display: inline; /* Muestra los elementos en línea horizontalmente */
-    margin: 20px;
+    margin: 20px 10px 10px 1000px;
 }
 
 ul.icons a {
     font-size: 3.5em;
     color: var(--main-color);
+
 }
 
 ul.icons h2 {
     font-size: 1.5em;
     color: var(--color-1);
-    margin: 20px;
-}
-
-
-.tittle {
-    background-image: url(../img/home/computer3.png);
-    background-position: left top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 70%;
-
+    margin: 20px 10px 40px 1000px;
 }
 
 .tittle h1 {
@@ -118,13 +97,7 @@ ul.icons h2 {
     text-align: right;
     letter-spacing: +4px;
     white-space: pre-line;
-    margin: 50px;
-    padding: 50px ;
- 
-    width: 750px;
-    height: 100px;
-
-   
+    margin: 20px 10px 40px 550px;
 }
 
 .font-1 {
@@ -145,10 +118,8 @@ ul.icons h2 {
     font-size: 2.5em;
     text-align: right;
     color: var(--bg-color);
-    margin: 50px;
-    padding: 50px ;
-    width: 750px;
-    height: 100px;
+    margin: 20px 10px 40px 600px;
+    
 }
 
 
@@ -159,13 +130,19 @@ footer {
 }
 
 footer p{
-    color: var(--main-color);
+    color: var(--text-color);
+    font-family: var(--font-family-primary);
+    font-size: 1.1em;
 }
 
+ul.icons-footer {  
+    list-style-type: none; 
+    justify-content: space-between; 
+}
 
 ul.icons-footer a {
     font-size: 2em;
-    color: var(--main-color);
+    color: var(--text-color);
 }
 
 
@@ -181,17 +158,16 @@ ul.icons-footer a:hover {
 
 /* html about me */
 nav.nav-about-me {
-    background-color: var();
+    background-color: var(--second-bg-color);
 }
 
 div.about-me h1, div.about-me p{
     color: var(--text-color);
-    font-size: 2em;
 }
 
+
 body.about-me{
-    background-color: var(--color-1);
-    margin: 0px;
+    background-color: var(--bg-color);
 }
 
 .me img {
@@ -199,30 +175,20 @@ body.about-me{
 }
 
 div.about-me p {
-    width: 50%;
-    height: 250px;
     border: 4px solid var(--text-color);
     padding: 40px;
     margin: 50px;
-
 }
 
 
 
 /* proyects */
-body.proyects {
-    margin: 0px;
-}
 div.proyects h1, div.proyects p{
     color: var(--text-color);
 }
 
 
 /* html contact */
-body.contact-me{
-    margin: 0px;
-}
-
 div.contact h1{
     font-family: var(--font-family-secondary-2);
     font-size: 5em;
@@ -234,8 +200,8 @@ div.contact h1{
 
 div.fieldset fieldset {
     font-family: var(--font-family-primary);
-    font-size: 0.4em;
-    ;
+    font-size: 0.5em;
+    background-color:var(--bg-color);
 
     
 }
@@ -250,12 +216,7 @@ div.fieldset h2 {
 
 
 div.fieldset fieldset button {
-    background-color: var(--second-bg-color);
-}
-
-div.my-details {
-    background-color:var(--color-4);
-    font-size: 1.3em;
+    background-color: var(--bg-color);
 }
 
 address{
