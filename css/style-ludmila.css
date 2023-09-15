@@ -201,7 +201,7 @@ ul.icons h2 {
 }
 
 
-/* footer */
+/* ------------------ footer ----------------------------*/
 footer {
     font-family: var(--font-family-secondary-2);
     font-size: 1.5em;
@@ -229,10 +229,20 @@ ul.icons-footer a:hover {
 }
 
 
-/* html about me */
+/* -------------------html about me --------------------*/
 body.about-me {
     background-color: var(--color-1);
     margin: 0px;
+    background-image: linear-gradient(to bottom, 
+    var(--color-1), 
+    var(--color-4), 
+    var(--main-color), 
+    var(--second-bg-color), 
+    var(--bg-color), 
+    var(--text-color)
+  );
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .about-me h1 {
@@ -294,7 +304,7 @@ body.contact-me {
 
 div.contact h1 {
     font-family: var(--font-family-secondary-2);
-    font-size: 5em;
+    font-size: 4em;
     letter-spacing: +4px;
     white-space: pre-line;
     color: var(--text-color);
