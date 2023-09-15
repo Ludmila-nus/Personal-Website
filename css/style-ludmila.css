@@ -1,6 +1,5 @@
 html {
-    margin: 0px;
-    border: 0px;
+    margin: 0;
     text-decoration: none;
     border: none;
     outline: none;
@@ -11,7 +10,7 @@ html {
     --font-family-primary: 'Lato', sans-serif;
     --font-family-secondary: 'Signika Negative', sans-serif;
     --font-family-secondary-2: 'Sarala', sans-serif;
-        
+
     --text-color: #000000;
     --bg-color: #3b3b3b;
     --second-bg-color: #777777;
@@ -33,9 +32,10 @@ html {
     text-shadow: 0 0 10px rgba(149, 5, 108, 0.8), 0 0 20px rgba(149, 5, 108, 0.8), 0 0 30px rgba(149, 5, 108, 0.8);
 }
 
-body{
+body {
     font-family: var(--font-family-primary);
-    font-size: 62.5%; /* 1 rem equivale al 10% del tamaño de fuente predeterminado del navegador. 
+    font-size: 62.5%;
+    /* 1 rem equivale al 10% del tamaño de fuente predeterminado del navegador. 
     Esto facilita las conversiones de tamaños de fuente en rem. 
     tamaño de fuente de 16px = 1.6rem en lugar de 16px.*/
 }
@@ -49,7 +49,7 @@ body.inicio {
 }
 
 
-div.nav-var > nav {
+div.nav-var>nav {
     background-image: url('../img/banner/banner1.png');
     height: 100px;
     background-size: cover;
@@ -61,24 +61,53 @@ div.nav-var > nav {
 ul.nav-list {
     list-style-type: none; /* Quita los puntos de lista */
     display: flex; /* Utiliza flexbox para organizar los elementos todos en linea*/
-    justify-content: space-between; /* Distribuye espacio entre los elementos */
+    justify-content: space-between;/* Distribuye espacio entre los elementos */
+    position: relative;
+    bottom: 20%;
+
 }
 
 ul.nav-list li {
-    display: inline; /* Muestra los elementos en línea horizontalmente */
-    margin-right: 20px; /* Añade margen derecho para separar los elementos */
+    display: inline;
+    margin-right: 20px;
 }
 
 ul.nav-list a {
+    font-family: var(--font-family-secondary-2);
+    letter-spacing: +4px;
     color: var(--text-color);
-    font-size: 2.5em;
+    font-size: 2.7em;
     font-weight: 800;
     text-transform: capitalize;
     text-decoration-line: none;
+    text-shadow:
+        0 0 10px var(--color-1),
+        0 0 20px var(--color-1),
+        0 0 30px var(--color-1),
+        0 0 40px var(--color-1),
+        0 0 10px var(--color-4),
+        0 0 20px var(--color-4),
+        0 0 30px var(--color-4),
+        0 0 40px var(--color-4);
+
 }
-ul.nav-list a:hover{
+
+ul.nav-list a:hover {
     background-color: var(--bg-color);
     color: var(--color-1);
+    text-shadow:
+        0 0 10px var(--color-1),
+        0 0 20px var(--color-1),
+        0 0 30px var(--color-1),
+        0 0 40px var(--color-1),
+        0 0 10px var(--bg-color),
+        /* Cambiar a negro */
+        0 0 20px var(--bg-color),
+        /* Cambiar a negro */
+        0 0 30px var(--bg-color),
+        /* Cambiar a negro */
+        0 0 40px var(--bg-color);
+    /* Cambiar a negro */
 }
 
 ul.icons a:hover {
@@ -87,19 +116,34 @@ ul.icons a:hover {
 }
 
 ul.icons li {
-    display: inline; /* Muestra los elementos en línea horizontalmente */
+    display: inline;
+    /* Muestra los elementos en línea horizontalmente */
     margin: 20px;
 }
 
 ul.icons a {
     font-size: 3.5em;
     color: var(--main-color);
+    position: relative;
+    left: 700px;
 }
 
 ul.icons h2 {
     font-size: 1.5em;
     color: var(--color-1);
     margin: 20px;
+    position: relative;
+    left: 700px;
+}
+
+.icons {
+    position: relative;
+}
+
+.social-icons {
+    position: relative;
+    bottom: 100px;
+    left: 300px;
 }
 
 
@@ -109,7 +153,7 @@ ul.icons h2 {
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 70%;
-
+    margin-bottom: 100px;
 }
 
 .tittle h1 {
@@ -118,37 +162,42 @@ ul.icons h2 {
     text-align: right;
     letter-spacing: +4px;
     white-space: pre-line;
-    margin: 50px;
-    padding: 50px ;
- 
+    margin-top: 0px;
+    margin-bottom: 50px;
+    padding: 50px;
+
     width: 750px;
     height: 100px;
 
-   
+    position: relative;
+    left: 520px;
 }
 
 .font-1 {
     font-weight: 100;
 }
 
-.font-2{
+.font-2 {
     font-weight: 900;
     font-style: italic;
 }
+
 .font-3 {
     font-weight: 300;
     font-size: 0.8em;
 }
 
-.tittle p{
+.tittle p {
     font-family: var(--font-family-secondary);
     font-size: 2.5em;
     text-align: right;
     color: var(--bg-color);
-    margin: 50px;
-    padding: 50px ;
+    margin-top: 50px;
+    padding: 50px;
     width: 750px;
     height: 100px;
+    position: relative;
+    left: 520px;
 }
 
 
@@ -158,7 +207,7 @@ footer {
     font-size: 1.5em;
 }
 
-footer p{
+footer p {
     color: var(--main-color);
 }
 
@@ -170,8 +219,9 @@ ul.icons-footer a {
 
 
 ul.icons-footer li {
-    display: inline; /* Muestra los elementos en línea horizontalmente */
-    margin-right: 10px; /* Añade margen derecho para separar los elementos */
+    display: inline;  
+    margin-right: 10px;
+   
 }
 
 ul.icons-footer a:hover {
@@ -180,32 +230,49 @@ ul.icons-footer a:hover {
 
 
 /* html about me */
-nav.nav-about-me {
-    background-color: var();
-}
-
-div.about-me h1, div.about-me p{
-    color: var(--text-color);
-    font-size: 2em;
-}
-
-body.about-me{
+body.about-me {
     background-color: var(--color-1);
     margin: 0px;
 }
 
-.me img {
-    border: 5px solid var(--text-color);
+.about-me h1 {
+    font-family: var(--font-family-secondary-2);
+    font-size: 4em;
+    letter-spacing: +4px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    padding: 20px;
+    position: relative;
+    left: 90px;
+    top: 50px;
 }
 
-div.about-me p {
-    width: 50%;
-    height: 250px;
+div.about-me p{
+    color: var(--text-color);
+    font-size: 2em;
+    width: 30%;
+    height: 80%;
     border: 4px solid var(--text-color);
-    padding: 40px;
+    padding: 50px;
     margin: 50px;
+    position: relative;
+    left: 400px;
+    bottom: 100px;
 
 }
+
+
+.me img {
+    width: 30%;
+    height: 30%;
+    border: 4px solid var(--text-color);
+    margin: 50px;
+    position: relative;
+    bottom: 500px;
+    padding-right:10px;
+    padding-left: 10px;
+}
+
 
 
 
@@ -213,22 +280,24 @@ div.about-me p {
 body.proyects {
     margin: 0px;
 }
-div.proyects h1, div.proyects p{
+
+div.proyects h1,
+div.proyects p {
     color: var(--text-color);
 }
 
 
 /* html contact */
-body.contact-me{
+body.contact-me {
     margin: 0px;
 }
 
-div.contact h1{
+div.contact h1 {
     font-family: var(--font-family-secondary-2);
     font-size: 5em;
     letter-spacing: +4px;
     white-space: pre-line;
-    color:var(--text-color);
+    color: var(--text-color);
 
 }
 
@@ -237,12 +306,14 @@ div.fieldset fieldset {
     font-size: 0.4em;
     ;
 
-    
+
 }
-div.fieldset p{
+
+div.fieldset p {
     color: var(--text-color);
     font-size: 4em
 }
+
 div.fieldset h2 {
     color: var(--text-color);
     font-size: 2em;
@@ -254,11 +325,11 @@ div.fieldset fieldset button {
 }
 
 div.my-details {
-    background-color:var(--color-4);
+    background-color: var(--color-4);
     font-size: 1.3em;
 }
 
-address{
+address {
     font-size: 2.8em;
     color: var(--text-color);
     letter-spacing: +3px;
