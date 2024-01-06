@@ -1,5 +1,4 @@
-![My personal web side](https://github.com/Ludmila-nus/Personal-Website/assets/123734518/a73e1596-fb02-4963-8de1-872bb286e072)
-
+![banner](proyecto-pagina-web-personal\img\home\img-home-medium.png)
 
 ## Welcome to the repository of my personal website project!
 ####  Page under development.
