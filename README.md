@@ -1,4 +1,4 @@
-![banner](proyecto-pagina-web-personal\img\home\img-home-medium.png)
+![My personal webside](my-web.png)
 
 ## Welcome to the repository of my personal website project!
 ####  Page under development.
