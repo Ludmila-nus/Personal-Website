@@ -1,0 +1,93 @@
+.hero {
+    &__content {
+        height: 500px;
+
+        .welcome {
+            padding-top: 30px;
+            font-family: $primary-font;
+            font-weight: 500;
+            color: $medium-light-gray;
+            text-transform: uppercase;
+            letter-spacing: -1.9px;
+            font-size: 8.1rem;
+            width: 100%;
+            z-index: 2;
+            animation: fade-in-out-behind $duration $timing-function 1 forwards;
+            position: relative;
+            top: -30px;
+        }
+
+        .presentation {
+            height: 500px;
+            position: relative;
+
+            h2 {
+                font-family: $primary-font;
+                font-weight: 700;
+                color: $bg-darker;
+                text-transform: uppercase;
+                letter-spacing: 5px;
+                font-size: 2rem;
+                position: relative;
+                top: 70px;
+                left: 80px;
+                z-index: 3;
+
+            }
+
+            h2::before {
+                content: '';
+                height: 5px;
+                width: 130px;
+                position: absolute;
+                background-color: $toc-number;
+                left: 45px;
+                top: 37px;
+                z-index: 4;
+                animation: line $duration $timing-function 1 forwards;
+            }
+
+            figure {
+                height: 500px;
+
+                .me {
+
+                    img {
+                        object-fit: contain;
+                        filter: grayscale(100%);
+                        transform: rotate(-20deg);
+                        position: relative;
+                        top: -440px;
+                        left: -40px;
+                        z-index: 1;
+                    }
+                }
+            }
+
+            .study {
+                position: relative;
+                color: $bg-darker;
+                font-family: $content_font;
+                text-transform: capitalize;
+                font-size: 0.8rem;
+                line-height: 25px;
+                bottom: 453px;
+                padding: 25px;
+                z-index: 3;
+            }
+
+            .profile {
+                position: relative;
+                color: $text-color;
+                font-family: $content_font;
+                text-transform: capitalize;
+                font-style: italic;
+                font-size: 0.8rem;
+                line-height: 20px;
+                bottom: 325px;
+                padding: 25px;
+                z-index: 3;
+            }
+        }
+    }
+}

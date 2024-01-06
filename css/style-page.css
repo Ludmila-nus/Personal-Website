@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate:ital@1&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap');
+
+:root {
+    --header_font: 'Open Sans', sans-serif;
+    --content_font: 'Roboto', sans-serif;
+    --temporary_content_font: 'Mate', serif;
+
+    --bg: #fff;
+    --bg-secondary: #f8f8f8;
+    --bg-third: #f3f3f3;
+    --bg-darker: #f8f8f8;
+    --text-color: #333;
+    --text-secondary: #4e4e4e;
+    --text-third: #555;
+    --text-bold: #000;
+    --text-light: #79776d;
+    --text-link: #005fee;
+    --text-link-hover: #0050c7;
+    --text-link-bg: RGBA(255, 234, 243, 0);
+    --text-link-bg-hover: RGBA(0, 205, 238, 0.18);
+    --lighter-gray: #eee;
+    --light-gray: #ddd;
+    --medium-light-gray: #ccc;
+    --slim-border: #eee;
+    --toc-bg: #f8f3f3;
+    --toc-text: #724c24;
+    --toc-link: #5b2e00;
+    --toc-number: #b46e03;
+    --new-gradient: linear-gradient(to bottom right, #a2a2a2, #cfcecc);
+    --diagonal-line: url(data:image/svg+xml,%3Csvg preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1367 172.7'%3E%3Cpath d='M1367 172.7v-14.6C385.1 158.1 0 0 0 0v172.7z' fill='%23fff'/%3E%3C/svg%3E);
+    --small-diagonal-line: url(data:image/svg+xml,%3Csvg preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1183 42.14'%3E%3Cpath fill='%23fff' d='M0,0S535,78.49,1183,0V42.14H0Z'/%3E%3C/svg%3E%0A);
+    --loading: linear-gradient(to right, var(--lighter-gray) 8%, var(--light-gray) 18%, var(--lighter-gray) 33%);
+}
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: var(--header_font);
+}
+
+body {
+    font-size: 16px;
+}
+
+
+div.nav-var nav ul {
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: var(--light-gray);
+
+}
+
+nav ul li a {
+    display: block;
+    text-transform: capitalize;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    color: var(--text-color);
+    font-size: 1.5rem;
+
+}
+
+nav ul div.nav-other>li a:hover {
+    border-bottom: 3px solid var(--bg3);
+}
+
+ul.dropdown {
+    padding: 0;
+    margin: 0;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 0.5em;
+}
+
+ul.dropdown a {
+
+    font-size: 0.5em;
+}
+
+div.nav-var nav li:hover ul.dropdown {
+    visibility: visible;
+    opacity: 1;
+}
+
+ul.dropdown a:hover {
+    border-bottom: 3px solid var(--bg3);
+}
+
+section.tittle {
+    background-color: var(--bg2);
+    margin: 0;
+    padding: 10px;
+    color: var(--bg3);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+section.tittle span:first-of-type {
+    font-weight: 500;
+    font-size: 15vw; 
+    text-align: center;
+    padding: 10vw; 
+    position: relative;
+    z-index: 1;
+    max-width: 80%; 
+    text-shadow: 2px 2px 2px var();
+}
+
+section.tittle img {
+    width: 40%;
+    height: auto; 
+    position: absolute;
+    top: 0;
+    left: 250px;
+    z-index: 2;
+}
+
+section.tittle span:nth-of-type(2) {
+    font-weight: 500;
+    font-size: 4vw; 
+    text-align: center;
+    padding: 10vw; 
+    position: relative;
+    z-index: 3;
+    max-width: 80%; 
+}

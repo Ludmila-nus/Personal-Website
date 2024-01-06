@@ -1,0 +1,86 @@
+.header {
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  text-transform: capitalize;
+  color: $bg;
+  padding: 0;
+  justify-items: center;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+
+  &__1 {
+    grid-area: 1 / 1 / 1 / 3;
+    justify-self: start;
+  }
+
+  &__2 {
+    grid-area: 2 / 2 / 2 / 4;
+
+  }
+
+  &__3 {
+    grid-area: 1 / 4 / 1 / 4;
+  }
+
+
+  ul {
+    @include reset-list();
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    li {
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  &__a {
+    text-decoration: none;
+    color: $bg;
+    font-family: $content_font;
+    font-size: 500;
+
+    span {
+      color: $toc-number;
+      font-weight: 600;
+    }
+
+  }
+
+  &__a:hover {
+    text-decoration: underline 2px solid $light-gray;
+    text-underline-offset: 7px;
+  }
+
+  &__contact {
+    @include button();
+
+    .a-contact {
+      text-decoration: none;
+      color: $toc-number;
+      padding: 15px;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      font-family: $content_font;
+    }
+
+    .a-contact:hover {
+      color: $light-gray;
+    }
+  }
+}
+
+header::before {
+  content: '';
+  height: 0.1px;
+  width: 100%;
+  position: absolute;
+  background-color: $medium-light-gray;
+  top: 77px;
+}
