@@ -6,7 +6,7 @@ body {
   background-image: $new-gradient;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 93%;
+  max-width: 768px;
   height: 896px;
 
 }
